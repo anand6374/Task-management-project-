@@ -1,0 +1,124 @@
+/* Reset and universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar Styling */
+.container-m {
+    background-color: white;
+    padding: 15px;
+    width: 99%;
+   
+ 
+}
+
+.navmanger {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home, .task, .info, .view, .vt, .viewall, .out,.gmail-m {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+    margin-right: 5px;
+}
+
+.home , .task , .info , .view , .vt , .viewall ,.out ,.gmail-m {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home:hover, .task:hover, .info:hover, .view:hover, .vt:hover, .viewall:hover, .out:hover,.gmail-m:hover {
+    background-color: #0056b3;
+}
+
+.home.active, .task.active, .info.active, .view.active, .vt.active, .viewall.active, .out.active ,.gmail-m.active{
+    background-color: #007bff;
+    color: white;
+}
+
+/* Container Styling */
+.container-m {
+ 
+    padding: 20px;
+    max-width: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navmanger {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home, .task, .info, .view, .vt, .viewall, .out,.gmail-m {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home, .task , .info , .view , .vt , .viewall , .out,.gmail-m  {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 4px;
+    }
+
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+/* Tablet and Laptop View */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navmanger {
+        justify-content: space-between;
+    }
+
+    .container {
+        padding: 20px;
+    
+    }
+}
+
+/* Small devices, like very small mobile screens */
+@media (max-width: 480px) {
+    .home a, .task a, .info a, .view a, .vt a, .viewall a, .out a ,.gmail-m a{
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    .container h1, .container p {
+        font-size: 16px;
+    }
+}

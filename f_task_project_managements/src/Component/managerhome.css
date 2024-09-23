@@ -1,0 +1,86 @@
+/* General styling for all screen sizes */
+.manager-homepage {
+  margin: 20px auto;
+  width: 95%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manager-name {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.para-manager, .para-start {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ul-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.ul-list li {
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.ul-list li strong {
+  color: #007bff;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .manager-name {
+    font-size: 22px;
+  }
+
+  .para-manager, .para-start {
+    font-size: 16px;
+  }
+
+  .ul-list li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .manager-homepage {
+    padding: 15px;
+  }
+}
+
+/* Laptop view */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .manager-name {
+    font-size: 26px;
+  }
+
+  .para-manager, .para-start {
+    font-size: 17px;
+  }
+
+  .ul-list li {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .manager-homepage {
+    padding: 20px;
+    max-width: 90%;
+  }
+}

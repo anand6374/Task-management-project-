@@ -1,0 +1,130 @@
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1.allemployee{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  h1.employeeinfo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: white;
+  }
+  
+  th:hover {
+    background-color: #0056b3;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 15px; 
+    text-align: left;
+  }
+  
+  th {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  table tr th, table tr td {
+    padding: 12px;
+  }
+  
+  /*laptop*/
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      text-align: center;
+      padding: 25px; 
+    }
+  
+    h1 {
+      font-size: 26px;
+    }
+  
+    table {
+      margin-bottom: 30px; 
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 15px; 
+      text-align: center; 
+      font-size: 16px; 
+    }
+  
+    td {
+      font-size: 14px;
+    }
+  
+    table tr th, table tr td {
+      padding: 16px;
+      text-align: center; 
+    }
+  }
+  
+  /* Mobile  */
+  @media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+  
+    tr {
+      margin-bottom: 20px;
+      text-align: center; 
+    }
+  
+    td {
+      text-align: center; 
+      padding-left: 0;
+      position: relative;
+      font-size: 14px;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 100%;  
+      padding-left: 10px;
+      text-align: left;
+      font-weight: bold;
+    }
+  
+    
+    th {
+      display: none; 
+    }
+  }
+  

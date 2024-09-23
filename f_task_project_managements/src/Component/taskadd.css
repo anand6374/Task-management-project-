@@ -1,0 +1,120 @@
+.container {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.createtask {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.project_name,
+.project_requirement,
+.Client_name,
+.manager_name,
+.developer_name,
+.time_period,
+.start_date,
+.dead_line {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+      max-width: 700px; 
+      padding: 25px;
+  }
+
+  .task {
+      font-size: 26px;
+  }
+
+  label {
+      font-size: 16px; 
+  }
+
+  input[type="text"],
+  input[type="date"] {
+      padding: 12px;
+      font-size: 16px;
+  }
+
+  .button {
+      font-size: 18px;
+      padding: 12px;
+  }
+}
+/*mobile*/
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      max-width: 100%; 
+  }
+
+  .task {
+      font-size: 20px;
+  }
+
+  label {
+      font-size: 14px; 
+  }
+
+  input[type="text"],
+  input[type="date"] {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .button {
+      font-size: 14px; 
+      padding: 10px;
+  }
+}

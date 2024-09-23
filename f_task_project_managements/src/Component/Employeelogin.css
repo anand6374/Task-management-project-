@@ -1,0 +1,111 @@
+/* Login Form Container */
+.container-login {
+    max-width: 1000px; 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Labels and Inputs */
+.container-login label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.container-login input, .container-login select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.back {
+    width: 15%;
+    padding: 10px;
+    background-color: #333; /* Light blue color for distinction */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 800px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.back:hover {
+    background-color: #0056b3;
+}
+/* Login Button */
+.loginbutton {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginbutton:hover {
+    background-color: #0056b3;
+}
+
+/* Login Title */
+h1.login {
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Laptop View */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container-login {
+        max-width: 1000px; 
+        padding: 25px; 
+    }
+
+    h1.login {
+        font-size: 28px; 
+    }
+
+    .loginbutton {
+        font-size: 18px; 
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .container-login {
+        max-width: 100%; 
+        padding: 15px; 
+        box-shadow: none; 
+    }
+
+    h1.login {
+        font-size: 20px; 
+    }
+
+    .loginbutton {
+        font-size: 14px; /* Smaller button text for mobile */
+    }
+}

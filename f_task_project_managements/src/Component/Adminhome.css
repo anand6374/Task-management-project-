@@ -1,0 +1,83 @@
+/* General styling for all screen sizes */
+.admin-name {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.admin-content {
+    margin: 20px auto;
+  width: 95%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.para-task {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task-list li strong {
+    color: #007bff;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .admin-name {
+        font-size: 20px;
+    }
+
+    .admin-content {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .para-task {
+        font-size: 16px;
+    }
+
+    .task-list li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Laptop view */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .admin-name {
+        font-size: 22px;
+    }
+
+    .admin-content {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .para-task {
+        font-size: 17px;
+    }
+
+    .task-list li {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+/* General styling for all screen sizes */
+.developer-name {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin: 20px 0;
+  }
+  .developer-conatiner{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .developer-task {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .instruction, .task-collection {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .instruction li, .task-collection li {
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .instruction li, .task-collection li strong {
+    color: #007bff;
+  }
+  
+  .follow {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .developer-name {
+      font-size: 24px;
+    }
+  
+    .developer-task, .follow {
+      font-size: 16px;
+    }
+  
+    .instruction li, .task-collection li {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Laptop view */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .developer-name {
+      font-size: 26px;
+    }
+  
+    .developer-task, .follow {
+      font-size: 17px;
+    }
+  
+    .instruction li, .task-collection li {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
+  

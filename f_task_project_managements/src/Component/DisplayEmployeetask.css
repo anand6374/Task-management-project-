@@ -1,0 +1,97 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.yourtask {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+th:hover{
+    background-color:  #0056b3;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Laptop View Adjustments */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 25px;
+    }
+
+    h1.task {
+        font-size: 26px;
+    }
+
+    th, td {
+        padding: 16px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    td {
+        text-align: center;
+        padding-left: 0;
+        position: relative;
+        font-size: 14px;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding-left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    th {
+        display: none; 
+    }
+}
